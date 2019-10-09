@@ -1,5 +1,7 @@
 /* font color */
 /* font family */
+/* Theme Color */
+/* Button Color */
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
@@ -141,6 +143,13 @@ a {
   color: #000;
   font-family: "Roboto", sans-serif;
 }
+img {
+  vertical-align: bottom;
+}
+button {
+  outline: none;
+  border: none;
+}
 @font-face {
   font-family: 'Roboto';
   font-style: normal;
@@ -152,11 +161,63 @@ body {
   color: #000;
   font-family: "Roboto", sans-serif;
 }
+h1 {
+  font-size: 1.5rem;
+  margin: 1vw 0;
+}
+@media only screen and (min-width: 500px) {
+  h1 {
+    font-size: 1.8rem;
+  }
+}
+@media only screen and (min-width: 800px) {
+  h1 {
+    font-size: 2rem;
+  }
+}
+h2 {
+  font-size: 1.2rem;
+}
+@media only screen and (min-width: 500px) {
+  h2 {
+    font-size: 1.3rem;
+  }
+}
+@media only screen and (min-width: 800px) {
+  h2 {
+    font-size: 1.5rem;
+  }
+}
+p {
+  font-size: 1rem;
+}
+@media only screen and (min-width: 500px) {
+  p {
+    font-size: 1.1rem;
+  }
+}
+@media only screen and (min-width: 800px) {
+  p {
+    font-size: 1.2rem;
+  }
+}
+button {
+  font-size: 1.1rem;
+}
+@media only screen and (min-width: 500px) {
+  button {
+    font-size: 1.15rem;
+  }
+}
+@media only screen and (min-width: 800px) {
+  button {
+    font-size: 1.25rem;
+  }
+}
 .container {
   max-width: 1000px;
   margin: 0 auto;
   padding: 0 3vw;
-  background: orange;
 }
 .navbar {
   display: flex;
@@ -164,6 +225,32 @@ body {
   align-items: center;
   height: 8vmax;
 }
+/* Nav */
 .nav .nav-item:not(:last-child) {
   margin-right: 3vw;
+}
+/* Intro */
+.intro {
+  display: flex;
+  flex-direction: column;
+  background: #e9ecef;
+  padding: 5vw 2vw;
+}
+.intro .intro-img img {
+  max-width: 50%;
+}
+.intro .intro-subtitle {
+  margin-bottom: 1.5vw;
+}
+.intro .intro-content {
+  border-top: 0.1vw solid #d7dadd;
+  padding: 2vw 0;
+}
+.intro .intro-action {
+  align-self: flex-start;
+  color: #fff;
+  background: #808080;
+  min-width: 15vw;
+  padding: 1vw 1.3vw;
+  border-radius: 5px;
 }

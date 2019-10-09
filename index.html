@@ -1,19 +1,130 @@
-<!doctype html>
+<!DOCTYPE html>
 
 <html lang="en">
-<head>
-  <meta charset="utf-8">
+  <head>
+    <meta charset="utf-8" />
 
-  <title>My Resume</title>
+    <title>My Resume</title>
 
-  <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/index.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!--[if lt IE 9]>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.js"></script>
+    <![endif]-->
+  </head>
 
-  <!--[if lt IE 9]>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.js"></script>
-  <![endif]-->
-</head>
+  <body>
+    <!-- Container -->
+    <div class="container">
+      <!-- Navbar -->
+      <div class="navbar">
+        <!-- Nav -->
+        <nav class="nav">
+          <a class="nav-item nav-item-1" href="#">Home</a>
+          <a class="nav-item nav-item-2" href="#">About</a>
+          <a class="nav-item nav-item-3" href="#">Portfolio</a>
+          <a class="nav-item nav-item-4" href="#">Contact</a>
+        </nav>
+      </div>
 
-<body>
-  <h1>My Resume</h1>
-</body>
+      <!-- Header -->
+      <header class="header">
+        <!-- Intro -->
+        <div class="intro">
+          <div class="intro-img">
+            <img
+              src="./assets/img/intro-img.jpg"
+              alt="Two people are working together in front of laptop"
+            />
+          </div>
+          <h1 class="intro-title">Euihyeok Lee - Lambda Student</h1>
+          <h2 class="intro-subtitle">School Project - Digital Resume</h2>
+          <p class="intro-content">
+            Converting provided image to code... processing
+          </p>
+          <button class="intro-action">Getting Started</button>
+        </div>
+      </header>
+
+      <!-- Content -->
+      <section class="content">
+        <!-- Top -->
+        <div class="top">
+          <!-- Listen Up -->
+          <div class="card listen-up">
+            <h2 class="card-title listen-up-title">Listen Up...</h2>
+            <p class="card-content listen-up-content">
+              Nice to meet you! Lorem ipsum dolor sit amet consectetur
+              adipisicing elit. Nulla rem voluptates officiis at consequuntur
+              sunt illum, culpa ut, dignissimos dolorem repellendus modi eveniet
+              eaque quos corrupti ratione possimus nobis. Doloremque.
+            </p>
+          </div>
+
+          <!-- Good At -->
+          <div class="card good-at">
+            <h2 class="card-title good-at-title">Stuff I'm Good At</h2>
+
+            <!-- List -->
+            <ul class="list">
+              <!-- List Item -->
+              <li class="list-item list-item-1"><p>Sleeping</p></li>
+              <li class="list-item list-item-2"><p>Eating</p></li>
+              <li class="list-item list-item-3"><p>Lorem.</p></li>
+              <li class="list-item list-item-4"><p>Lorem, ipsum.</p></li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Bottom -->
+        <div class="bottom">
+          <!-- Table -->
+          <h2 class="card-title">Work History</h2>
+          <table class="table">
+            <colgroup>
+              <col style="width:20%" />
+              <col style="width:25%" />
+              <col style="width:40%" />
+              <col style="width:25%" />
+            </colgroup>
+            <thead>
+              <tr class="table-row">
+                <th class="table-header table-header-1">Yrs</th>
+                <th class="table-header table-header-2">Company</th>
+                <th class="table-header table-header-3">Title</th>
+                <th class="table-header table-header-4">TechUsed</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr class="table-row">
+                <td class="table-cell table-cell-1">1</td>
+                <td class="table-cell table-cell-2">Lorem.</td>
+                <td class="table-cell table-cell-3">Lorem.</td>
+                <td class="table-cell table-cell-4">Lorem.</td>
+              </tr>
+              <tr class="table-row">
+                <td class="table-cell table-cell-1">2</td>
+                <td class="table-cell table-cell-2">Lorem.</td>
+                <td class="table-cell table-cell-3">Lorem.</td>
+                <td class="table-cell table-cell-4">Lorem.</td>
+              </tr>
+              <tr class="table-row">
+                <td class="table-cell table-cell-1">3</td>
+                <td class="table-cell table-cell-2">Lorem.</td>
+                <td class="table-cell table-cell-3">Lorem.</td>
+                <td class="table-cell table-cell-4">Lorem.</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </section>
+
+      <!-- Footer -->
+      <footer class="footer">
+        <div class="copyright">
+          Copyright NobodyWorld 2019
+        </div>
+      </footer>
+    </div>
+  </body>
 </html>

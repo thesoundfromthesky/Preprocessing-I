@@ -2,6 +2,7 @@
 /* font family */
 /* Theme Color */
 /* Button Color */
+/* Table */
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
@@ -292,17 +293,18 @@ button {
   width: 100%;
   margin-bottom: 3vw;
 }
-.card .card-title {
+.card-title {
   font-size: 1.2rem;
   font-weight: bold;
+  margin-bottom: 1vw;
 }
 @media only screen and (min-width: 500px) {
-  .card .card-title {
+  .card-title {
     font-size: 1.3rem;
   }
 }
 @media only screen and (min-width: 800px) {
-  .card .card-title {
+  .card-title {
     font-size: 1.5rem;
   }
 }
@@ -317,4 +319,31 @@ button {
 }
 .list .list-item:not(:last-child) {
   border-bottom: 0.1vw solid #e9ecef;
+}
+.table {
+  width: 100%;
+  text-align: left;
+}
+.table tbody .table-row:nth-child(2n + 1) {
+  background: #f2f2f2;
+}
+.table .table-row {
+  border-top: 0.1vw solid #e9ecef;
+}
+.table .table-header {
+  font-weight: bold;
+}
+@media only screen and (min-width: 500px) {
+  .table .table-header {
+    font-size: 1.1rem;
+  }
+}
+@media only screen and (min-width: 800px) {
+  .table .table-header {
+    font-size: 1.2rem;
+  }
+}
+.table .table-header,
+.table .table-cell {
+  padding: 2vw 1vw;
 }

@@ -1,0 +1,22 @@
+.table {
+  width: 100%;
+  text-align: left;
+
+  tbody .table-row:nth-child(2n + 1) {
+    background: @table-bg-1;
+  }
+
+  .table-row {
+    border-top: 0.1vw solid @color-1;
+  }
+  .table-header {
+    .media-font-size(1.1rem, 1.2rem);
+    font-weight: bold;
+  }
+
+  .table-header,
+  .table-cell {
+    padding: 2vw 1vw;
+  }
+
+}
